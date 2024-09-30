@@ -1,0 +1,42 @@
+header{
+    background-image: url(https://c.pxhere.com/photos/64/a0/background_floor_texture_stained_floor_concrete_pattern_cement_stained-792739.jpg!d);
+    background-size: cover;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.Navigasjon{
+    list-style: none;
+}
+.NavigasjonA:hover{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 5;
+    flex-wrap: wrap;
+    width: 100%;
+       
+}
+
+main{
+    max-width: 70%;
+    min-width: 400px;
+}
+
+article{
+flex-wrap: wrap;
+padding: 4;
+box-shadow: #4d4d4d;
+min-width: 300px;
+max-width: 400px;
+
+
+}
+
+footer{
+    background-color: #6d6d6d;
+    color: #fff;
+    width: 100%;
+}
