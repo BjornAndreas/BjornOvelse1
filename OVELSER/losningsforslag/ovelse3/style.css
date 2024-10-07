@@ -1,3 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
 header{
     background-image: url(https://c.pxhere.com/photos/64/a0/background_floor_texture_stained_floor_concrete_pattern_cement_stained-792739.jpg!d);
     background-size: cover;
@@ -5,10 +15,19 @@ header{
     text-transform: uppercase;
     font-size: 25px;
     padding: 5px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .Navigasjon{
     list-style: none;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: aqua;
 }
 .NavigasjonA:hover{
     display: flex;
@@ -23,6 +42,19 @@ header{
 main{
     max-width: 70%;
     min-width: 400px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: #b964ff;
+}
+
+aside{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: #83ffa2
 }
 
 article{
@@ -39,4 +71,8 @@ footer{
     background-color: #6d6d6d;
     color: #fff;
     width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
